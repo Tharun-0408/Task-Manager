@@ -27,3 +27,27 @@ A simple Spring Boot application for managing tasks, built with Spring Data JPA 
    ```bash
    git clone https://github.com/Tharun-0408/task-manager.git
    cd task-manager/todo
+
+2. Configure your MySQL database in application.properties
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/todo_db
+   spring.datasource.username=your-username
+   spring.datasource.password=your-password
+   spring.jpa.hibernate.ddl-auto=update
+   
+3. Open the todo folder directly in IntelliJ IDEA (or your preferred IDE). IntelliJ will automatically detect it as a Maven project.
+   
+4. Build and run the application
+   ```bash
+   mvn spring-boot:run
+
+## API Endpoints
+
+### Tasks
+- `GET /tasks` → Get all tasks  
+- `GET /tasks/{id}` → Get a task by ID  
+- `POST /tasks` → Create a new task  
+- `PUT /tasks/{id}` → Update a task  
+- `DELETE /tasks/{id}` → Delete a task  
+
+   
