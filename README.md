@@ -48,6 +48,29 @@ A simple Spring Boot application for managing tasks, built with Spring Data JPA 
 - `GET /tasks/{id}` → Get a task by ID  
 - `POST /tasks` → Create a new task  
 - `PUT /tasks/{id}` → Update a task  
-- `DELETE /tasks/{id}` → Delete a task  
+- `DELETE /tasks/{id}` → Delete a task
+
+  ### Example Request Bodies  
+
+#### Create a Task (POST /tasks)  
+```json
+{
+  "title": "Finish project",
+  "description": "Complete the Spring Boot task manager",
+  "completed": false
+}
+```
+#### Update a Task (PUT /tasks/{id})
+```json
+{
+  "title": "Finish project",
+  "description": "Add README improvements and push to github",
+  "completed": true
+}
+```
+
+
+
+
 
    
