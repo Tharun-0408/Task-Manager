@@ -50,7 +50,7 @@ A simple Spring Boot application for managing tasks, built with Spring Data JPA 
 - `PUT /tasks/{id}` → Update a task  
 - `DELETE /tasks/{id}` → Delete a task
 
-  ### Example Request Bodies  
+  ### Example Request Bodies  (for testing in Postman or curl)
 
 #### Create a Task (POST /tasks)  
 ```json
